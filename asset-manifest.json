@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/flowers-front/static/css/main.e01e2930.css",
-    "main.js": "/flowers-front/static/js/main.c3618a95.js",
+    "main.js": "/flowers-front/static/js/main.374ab424.js",
     "static/js/453.15b50800.chunk.js": "/flowers-front/static/js/453.15b50800.chunk.js",
     "static/media/Calibri-Light.eot": "/flowers-front/static/media/Calibri-Light.ad605117bb11573d483d.eot",
     "static/media/Calibri-Light.ttf": "/flowers-front/static/media/Calibri-Light.6e65bc1d87d060380573.ttf",
@@ -29,11 +29,11 @@
     "static/media/Calibri-BoldItalic.woff2": "/flowers-front/static/media/Calibri-BoldItalic.d8499555068c1df42ae4.woff2",
     "index.html": "/flowers-front/index.html",
     "main.e01e2930.css.map": "/flowers-front/static/css/main.e01e2930.css.map",
-    "main.c3618a95.js.map": "/flowers-front/static/js/main.c3618a95.js.map",
+    "main.374ab424.js.map": "/flowers-front/static/js/main.374ab424.js.map",
     "453.15b50800.chunk.js.map": "/flowers-front/static/js/453.15b50800.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e01e2930.css",
-    "static/js/main.c3618a95.js"
+    "static/js/main.374ab424.js"
   ]
 }
