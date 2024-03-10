@@ -1,0 +1,60 @@
+@import "../../styles/variables.scss";
+
+.app-footer {
+  background-color: $primary-graphite;
+
+  .app-phone-icon {
+    fill: $primary-white;
+    margin-right: 4px;
+  }
+
+  .app-middle-bar__contacts-phone {
+    text-align: initial;
+  }
+
+  .app-middle-bar__contacts-phone_number {
+    color: $primary-white;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .app-footer__content-item {
+      margin: 0 8px;
+
+      &:first-of-type {
+        max-width: 240px;
+      }
+
+      &_link,
+      &_text {
+        font-size: 13px;
+        color: $primary-white;
+      }
+
+      &_heading {
+        font-size: 14px;
+        font-weight: bold;
+        color: $primary-white;
+        line-height: 3;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .app-footer {
+    .app-footer__content {
+      flex-direction: column;
+
+      &-item {
+        &:first-of-type {
+          max-width: unset;
+        }
+      }
+    }
+  }
+}

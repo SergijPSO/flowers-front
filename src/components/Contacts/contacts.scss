@@ -1,0 +1,65 @@
+@import "../../styles/variables.scss";
+
+.app-middle-bar__contacts {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  max-width: 122px;
+
+  &-phone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+
+      .app-middle-bar__contacts-phone_number,
+      .app-phone-icon {
+        color: $active-pink ;
+      }
+    }
+  }
+
+  .app-middle-bar__contacts-phone_number {
+    font-family: "Cambria", sans-serif;
+    color: $primary-dark_grey;
+  }
+
+  &-messengers {
+    display: flex;
+    justify-content: space-between;
+
+    &_link {
+
+      .app-telegram-icon,
+      .app-whatsapp-icon,
+      .app-viber-icon {
+        fill: $primary-dark_grey;
+        width: 32px;
+        height: 32px;
+      }
+
+      .app-telegram-icon:hover {
+        fill: $icon-blue;
+      }
+
+      .app-whatsapp-icon:hover {
+        fill: $icon-green;
+      }
+
+      .app-viber-icon:hover {
+        fill: $icon-purple;
+      }
+    }
+  }
+
+  &-messenger {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    min-width: unset;
+    max-width: 100px;
+    border-radius: 50%;
+  }
+
+}

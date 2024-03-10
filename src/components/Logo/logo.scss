@@ -1,0 +1,61 @@
+@import '../../styles/variables.scss';
+
+.app-logo {
+  height: 60px;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    .app-logo_slogan {
+      color: $active-pink;
+    }
+  }
+
+  &_text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_name {
+    font-size: 24px;
+    font-weight: 400;
+    color: $primary-black;
+  }
+
+  &_slogan {
+    font-size: 13px;
+    font-weight: 300;
+    color: $primary-dark_grey;
+  }
+
+  &_name,
+  &_slogan {
+    font-family: "Cambria", sans-serif;
+    text-align: center;
+  }
+
+
+
+}
+
+@media all and (max-width: "899px") {
+  .app-logo {
+    &_name {
+      font-size: 14px;
+    }
+
+    &_slogan {
+      font-size: 10px;
+    }
+
+    &_text {
+      margin: 0
+    }
+
+    .css-5b2gpb-MuiAvatar-root {
+      width: 40px;
+      height: 30px;
+      margin-right: 2px;
+    }
+  }
+}

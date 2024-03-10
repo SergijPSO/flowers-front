@@ -1,0 +1,73 @@
+@import "../../styles/variables.scss";
+
+.app-mobile-header {
+  // position: fixed;
+  display: flex;
+  align-items: center;
+  // width: calc(100% - 20px);
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 0 10px;
+}
+
+.app-sidebar {
+  height: 100%;
+  padding: 8px 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 86%;
+  min-width: 300px;
+
+  .app-logo {
+    align-self: center;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    &-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 4px 0;
+      border-bottom: 1px solid $primary-light_grey;
+    }
+  }
+
+  &_headline {
+    font-family: "Calibri", sans-serif;
+    font-size: 13px;
+    opacity: .6;
+    font-weight: 400;
+    padding-left: 12px;
+  }
+
+  &__menu_text.css-ahj2mt-MuiTypography-root {
+    display: block;
+    font-family: "Calibri";
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #272f38;
+    opacity: .6;
+    padding: 18px 10px;
+    border-bottom: 1px solid #dde0df;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $active-pink;
+      background-color: $primary-light_grey;
+    }
+  }
+
+  &__footer {
+    justify-content: center;
+    display: flex;
+  }
+}

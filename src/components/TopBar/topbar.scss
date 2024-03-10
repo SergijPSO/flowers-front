@@ -1,0 +1,40 @@
+@import '../../styles/variables.scss';
+
+.app-topbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $primary-graphite;
+
+  &_item {
+    &-link {
+      .app-topbar_item-text {
+        font-family: "Arial";
+        font-size: 12px;
+        color: $primary-white;
+        line-height: 24px;
+
+        &:hover {
+          color: $active-pink;
+        }
+      }
+    }
+  }
+
+  &:last-child {
+    display: flex;
+    align-items: center;
+
+    .app-topbar_item-text {
+      padding-right: 4px;
+    }
+  }
+}
+
+//Reseting default styles
+.css-n70jm4-MuiInputBase-root-MuiInput-root-MuiSelect-root::after,
+.css-n70jm4-MuiInputBase-root-MuiInput-root-MuiSelect-root::before,
+.css-n70jm4-MuiInputBase-root-MuiInput-root-MuiSelect-root::selection {
+  border-bottom: none !important;
+  background: transparent !important;
+}

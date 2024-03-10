@@ -1,0 +1,17 @@
+@import "normalizer.scss";
+@import "variables.scss";
+
+body {
+  background-color: $primary-light_grey;
+}
+
+#root {
+  .css-11b3ww9-MuiPaper-root-MuiAppBar-root {
+    background-color: unset;
+  }
+
+  .css-1ps6pg7-MuiPaper-root {
+    border-radius: unset;
+    background-color: unset;
+  }
+}

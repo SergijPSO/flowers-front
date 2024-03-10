@@ -1,0 +1,20 @@
+@import '../../styles/variables.scss';
+
+
+.app-cart-icon,
+.app-delivery-icon {
+  stroke: $primary-graphite;
+  stroke-width: 1.5px;
+}
+
+.app-header-actions_button {
+  height: 38px;
+}
+
+.app-header-actions_button.css-78trlr-MuiButtonBase-root-MuiIconButton-root:hover {
+  background-color: $active-pink;
+
+  .app-cart-icon {
+    stroke: $primary-white;
+  }
+}

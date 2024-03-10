@@ -1,0 +1,12 @@
+@import "../../styles/variables.scss";
+
+.app-header {
+  background-color: $primary-white;
+  display: flex;
+  flex-direction: column;
+
+  .app-phone-icon {
+    fill: $primary-dark_grey;
+    margin-right: 4px;
+  }
+}
