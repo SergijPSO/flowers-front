@@ -6,6 +6,8 @@ import Box from "@mui/material/Box";
 import Contacts from "../Contacts/Contacts";
 import "./footer.scss";
 
+import homepage from "../../homepageName";
+
 const Footer = () => {
   return (
     <footer className='app-footer' style={{ padding: "40px 0" }}>
@@ -29,14 +31,14 @@ const Footer = () => {
             </Typography>
             <Typography className='app-footer__content-item_text'>
               <Link
-                to='/payment-&-delivery'
+                to={`${homepage}/payment-&-delivery`}
                 className='app-footer__content-item_link'
               >
                 Доставка і оплата
               </Link>
             </Typography>
             <Typography className='app-footer__content-item_text'>
-              <Link to='/contacts' className='app-footer__content-item_link'>
+              <Link to={`${homepage}/contacts`} className='app-footer__content-item_link'>
                 Контакти
               </Link>
             </Typography>
@@ -47,7 +49,7 @@ const Footer = () => {
               Компанiя
             </Typography>
             <Typography className='app-footer__content-item_text'>
-              <Link to='/about' className='app-footer__content-item_link'>
+              <Link to={`${homepage}/contacts`} className='app-footer__content-item_link'>
                 Про нас
               </Link>
             </Typography>

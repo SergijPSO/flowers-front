@@ -10,23 +10,26 @@ import HomePage from "../../pages/HomePage";
 import AboutUs from "../../pages/AboutUs";
 import PaymentAndDelivery from "../../pages/PaymentAndDelivery";
 import Contacts from "../../pages/Contacts";
+
+import homepage from "../../homepageName";
+
 import "./content.scss";
 
 export default function Content() {
+  // const homepage = '/flowers-front'
   return (
     <div className='app-content'>
       <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/classic' element={<ClassicBouquets />} />
-        <Route path='/mono' element={<MonoBouquets />} />
-        <Route path='/mixed' element={<MixedBouquets />} />
-        <Route path='/mixed' element={<MixedBouquets />} />
-        <Route path='/boxes' element={<InBoxBouquets />} />
-        <Route path='/wow' element={<WowEffect />} />
-        <Route path='/promo' element={<PromoBouquets />} />
-        <Route path='/about' element={<AboutUs />} />
-        <Route path='/payment-&-delivery' element={<PaymentAndDelivery />} />
-        <Route path='/contacts' element={<Contacts />} />
+        <Route path={`${homepage}/`} element={<HomePage />} />
+        <Route path={`${homepage}/classic`} element={<ClassicBouquets />} />
+        <Route path={`${homepage}/mono`} element={<MonoBouquets />} />
+        <Route path={`${homepage}/mixed`}element={<MixedBouquets />} />
+        <Route path={`${homepage}/boxes`} element={<InBoxBouquets />} />
+        <Route path={`${homepage}/wow`} element={<WowEffect />} />
+        <Route path={`${homepage}/promo`} element={<PromoBouquets />} />
+        <Route path={`${homepage}/about`} element={<AboutUs />} />
+        <Route path={`${homepage}/payment-&-delivery`} element={<PaymentAndDelivery />} />
+        <Route path={`${homepage}/contacts`} element={<Contacts />} />
       </Routes>
     </div>
   );
