@@ -1,7 +1,8 @@
 @import '../../styles/variables.scss';
 @import '../../../public/fonts/calibri/calibri.scss';
 
-.app-header__menu {
+.app-header__menu,
+.css-k008qs {
   display: flex;
   justify-content: space-between;
   align-self: center;
@@ -12,7 +13,7 @@
     .app-header__menu_item {
       font-family: 'Calibri';
       font-weight: bold;
-      font-size: 14px;
+      font-size: 18px;
       color: $primary-graphite;
 
       &:hover,

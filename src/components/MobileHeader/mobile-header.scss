@@ -6,7 +6,7 @@
   align-items: center;
   // width: calc(100% - 20px);
   justify-content: space-between;
-  background-color: #ffffff;
+  background-color: $primary-white;
   padding: 0 10px;
 }
 
@@ -56,7 +56,7 @@
     color: #272f38;
     opacity: .6;
     padding: 18px 10px;
-    border-bottom: 1px solid #dde0df;
+    border-bottom: 1px solid $primary-light_grey;
 
     &:hover,
     &:focus,
@@ -67,7 +67,20 @@
   }
 
   &__footer {
-    justify-content: center;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .app-topbar {
+      margin-top: 30px;
+      width: 100%;
+      background-color: transparent;
+
+      &_item-text {
+        color: $primary-graphite;
+        font-weight: bold;
+      }
+    }
+
   }
 }

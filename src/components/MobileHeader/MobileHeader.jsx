@@ -7,6 +7,7 @@ import { Drawer, Typography, Box } from "@mui/material";
 import DeliveryIcon from "../../icons/DeliveryIcon";
 import { Link } from "react-router-dom";
 import Contacts from "../Contacts/Contacts";
+import TopBar from "../TopBar/TopBar";
 
 import "./mobile-header.scss";
 
@@ -89,6 +90,7 @@ const MobileHeader = () => {
           </Box>
           <Box className='app-sidebar__footer'>
             <Contacts />
+            <TopBar />
           </Box>
         </Box>
       </Drawer>
