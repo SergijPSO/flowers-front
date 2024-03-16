@@ -9,6 +9,8 @@ import { Link } from "react-router-dom";
 import Contacts from "../Contacts/Contacts";
 import TopBar from "../TopBar/TopBar";
 
+import "./mobile-header.scss";
+
 const MobileHeader = () => {
   const [opened, setOpened] = useState(false);
 
