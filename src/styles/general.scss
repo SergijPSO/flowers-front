@@ -1,5 +1,6 @@
 @import "normalizer.scss";
 @import "variables.scss";
+@import "../components/MobileHeader/mobile-header.scss";
 
 body {
   background-color: $primary-light_grey;
