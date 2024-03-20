@@ -3,6 +3,13 @@
 .app-footer {
   background-color: $primary-graphite;
 
+  .app-middle-bar__contacts-messengers_link {
+    svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+
   .app-phone-icon {
     fill: $primary-white;
     margin-right: 4px;

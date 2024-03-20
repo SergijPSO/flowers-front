@@ -1,2 +1,2 @@
-const homepage = '/flowers-front';
+const homepage = '/flowers-front/';
 export default homepage;

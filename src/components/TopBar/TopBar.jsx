@@ -9,7 +9,7 @@ export default function TopBar() {
   return (
     <Box className='app-topbar'>
       <Box className='app-topbar_item'>
-        <Link to={`${homepage}/about`} className='app-topbar_item-link'>
+        <Link to={`${homepage}about`} className='app-topbar_item-link'>
           <Typography variant='body1' className='app-topbar_item-text'>
             Про нас
           </Typography>
@@ -17,9 +17,17 @@ export default function TopBar() {
       </Box>
 
       <Box className='app-topbar_item'>
-        <Link to={`${homepage}/payment-&-delivery`}className='app-topbar_item-link'>
+        <Link to={`${homepage}payment`}className='app-topbar_item-link'>
           <Typography variant='body1' className='app-topbar_item-text'>
-            Доставка і оплата
+           Оплата
+          </Typography>
+        </Link>
+      </Box>
+
+      <Box className='app-topbar_item'>
+        <Link to={`${homepage}delivery`}className='app-topbar_item-link'>
+          <Typography variant='body1' className='app-topbar_item-text'>
+            Доставка
           </Typography>
         </Link>
       </Box>

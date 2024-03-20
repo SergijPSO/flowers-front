@@ -1,5 +1,5 @@
 import React from "react";
-import { Tabs, Tab } from "@mui/material";
+import {Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import "./menu.scss";
 
@@ -7,26 +7,26 @@ import homepage from "../../homepageName";
 
 const Menu = () => {
   return (
-    <Tabs className='app-header__menu'>
-      <Link className='app-header__menu_link' to={`${homepage}/classic`}>
-        <Tab className='app-header__menu_item' label='Класика' />
+    <Box className='app-header__menu'>
+      <Link className='app-header__menu_link' to={`${homepage}classic`}>
+        <Typography className='app-header__menu_item'>Класика</Typography>
       </Link>
-      <Link className='app-header__menu_link' to={`${homepage}/mono`}>
-        <Tab className='app-header__menu_item' label='Моно-букети' />
+      <Link className='app-header__menu_link' to={`${homepage}mono`}>
+        <Typography className='app-header__menu_item'>Моно-букети</Typography>
       </Link>
-      <Link className='app-header__menu_link' to={`${homepage}/mixed`}>
-        <Tab className='app-header__menu_item' label='Мікс-букети' />
+      <Link className='app-header__menu_link' to={`${homepage}mixed`}>
+        <Typography className='app-header__menu_item'>Мікс-букети</Typography>
       </Link>
-      <Link className='app-header__menu_link' to={`${homepage}/boxes`}>
-        <Tab className='app-header__menu_item' label='Квіти у  боксах' />
+      <Link className='app-header__menu_link' to={`${homepage}boxes`}>
+        <Typography className='app-header__menu_item'>Мікс-букети</Typography>
       </Link>
-      <Link className='app-header__menu_link' to={`${homepage}/promo`}>
-        <Tab className='app-header__menu_item' label='Акційні' />
+      <Link className='app-header__menu_link' to={`${homepage}promo`}>
+        <Typography className='app-header__menu_item'>Акційні</Typography>
       </Link>
-      <Link className='app-header__menu_link' to={`${homepage}/wow`}>
-        <Tab className='app-header__menu_item' label='Wow-еффект' />
+      <Link className='app-header__menu_link' to={`${homepage}wow`}>
+        <Typography className='app-header__menu_item'>Wow-ефект</Typography>
       </Link>
-    </Tabs>
+    </Box>
   );
 };
 

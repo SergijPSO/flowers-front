@@ -29,16 +29,27 @@ const Footer = () => {
             <Typography className='app-footer__content-item_heading'>
               Клієнтам
             </Typography>
+
             <Typography className='app-footer__content-item_text'>
               <Link
-                to={`${homepage}/payment-&-delivery`}
+                to={`${homepage}delivery`}
                 className='app-footer__content-item_link'
               >
-                Доставка і оплата
+                Доставка
               </Link>
             </Typography>
+
             <Typography className='app-footer__content-item_text'>
-              <Link to={`${homepage}/contacts`} className='app-footer__content-item_link'>
+              <Link
+                to={`${homepage}payment`}
+                className='app-footer__content-item_link'
+              >
+                Оплата
+              </Link>
+            </Typography>
+
+            <Typography className='app-footer__content-item_text'>
+              <Link to={`${homepage}contacts`} className='app-footer__content-item_link'>
                 Контакти
               </Link>
             </Typography>
@@ -49,7 +60,7 @@ const Footer = () => {
               Компанiя
             </Typography>
             <Typography className='app-footer__content-item_text'>
-              <Link to={`${homepage}/contacts`} className='app-footer__content-item_link'>
+              <Link to={`${homepage}about`} className='app-footer__content-item_link'>
                 Про нас
               </Link>
             </Typography>
