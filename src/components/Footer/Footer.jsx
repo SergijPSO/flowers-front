@@ -19,10 +19,13 @@ const Footer = () => {
             </Typography>
 
             <Typography className='app-footer__content-item_text'>
-              Ми захоплюємося квітами та розуміємо їх важливість у житті
-              великого міста. Наші сучасні букети відображають почуття сучасного
-              покоління.
+               Таємна кімната, де єднаються квіткові барви в одну палітру букета. Передамо Ваші вітання мовою квітів та врахуємо усі побажання & деталі. 
             </Typography>
+
+            <Typography className='app-footer__content-item_text'>
+              Єднаємо емоціями!
+            </Typography>
+            
           </Box>
 
           <Box className='app-footer__content-item' item xs={12} sm={6} lg={3}>
@@ -32,7 +35,7 @@ const Footer = () => {
 
             <Typography className='app-footer__content-item_text'>
               <Link
-                to={`${homepage}delivery`}
+                to={`${homepage}delivery`}  
                 className='app-footer__content-item_link'
               >
                 Доставка

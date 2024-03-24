@@ -5,8 +5,8 @@ export default function CartIcon() {
     <svg
       className='app-cart-icon'
       xmlns='http://www.w3.org/2000/svg'
-      width='22'
-      height='22'
+      width='38'
+      height='38'
       viewBox='0 0 64 64'
       fill='none'
     >

@@ -1,35 +1,88 @@
 @import "../../styles/variables.scss";
 
-.app-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 340px;
+.app-slider {
+  .app-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 420px;
 
-  &_caption {
-    font-family: "Arial";
-    color: $primary-white;
-    font-size: 32px;
-    display: inline-block;
-    max-width: 600px;
-    text-align: center;
+    &_caption {
+      font-size: 48px;
+    }
+
+    &--first-slide {
+      .app-slide_caption {
+        display: block;
+        font-size: 48px;
+        margin-bottom: 16px;
+      }
+    }
+
+    &--second-slide {
+
+      .app-slide {
+        &__left {
+          align-items: center;
+          text-align: center;
+        }
+
+        &_text {
+          font-size: 22px;
+          margin: 20px 0;
+        }
+      }
+
+    }
+
+    &__right {
+      flex-basis: 70%;
+      height: 100%;
+    }
+
+    &__left {
+      font-family: "Cambria", sans-serif;
+      flex-basis: 30%;
+      height: 100%;
+      background-color: $active-peach;
+      color: $primary-white;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 2%;
+
+      &--muddy-green {
+        background-color: $muddy-green;
+      }
+    }
+
+    &_image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
   }
+}
 
-  &__right {
-    width: 70%;
-    height: 100%;
+@media all and (max-width: 768px) {
+
+  .app-slider {
+
+    .app-slide {
+      align-items: normal;
+      flex-direction: column;
+      height: 100%;
+
+      &__left {
+        padding: 2% 2%;
+        flex-basis: 200px;
+      }
+
+      .app-slide_caption,
+      .app-slide_text {
+        margin: 0;
+      }
+    }
   }
-
-  &__left {
-    width: 30%;
-    height: 100%;
-    background-color: $active-pink;
-  }
-
-  &_image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
 }

@@ -11,7 +11,9 @@ const HeaderActions = () => {
       className='app-header-actions'
       sx={{ display: "flex", alignItems: "center" }}
     >
-      <DeliveryIcon className='app-header-actions_icon' />
+      <DeliveryIcon className='app-header-actions_icon'/>
+
+      <span className="app-header-actions_message">
       <Typography
         className='app-header-actions_text'
         sx={{
@@ -19,11 +21,29 @@ const HeaderActions = () => {
           fontWeight: "300",
           marginLeft: "10px",
           marginRight: "4px",
+          lineHeight: "1.1"
         }}
       >
-        БЕЗКОШТОВНО ПО МІСТУ
+        БЕЗКОШТОВНО
       </Typography>
-      <IconButton className='app-header-actions_button'>
+      <Typography
+          className='app-header-actions_text'
+          sx={{
+            fontSize: "13px",
+            fontWeight: "300",
+            marginLeft: "10px",
+            marginRight: "4px",
+            lineHeight: "1.1"
+          }}
+        >
+        <span className='app-header-actions_text-stretched'>ПО МІСТУ</span>
+      </Typography>
+      </span>
+
+      <IconButton
+      className='app-header-actions_button'
+      disableRipple={true}
+      sx={{padding: '0'}}>
         <CartIcon className='app-header-actions_icon' />
       </IconButton>
     </Box>

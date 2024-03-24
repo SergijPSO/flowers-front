@@ -39,6 +39,11 @@
       &_text {
         font-size: 13px;
         color: $primary-white;
+
+        &:last-child {
+          text-align: center;
+          margin-top: 16px;
+        }
       }
 
       &_heading {

@@ -1,29 +1,47 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel'
-import SliderItem from './SliderItem';
-import './slider.scss';
+import { Paper, Box } from '@mui/material'
+import homepage from "../../homepageName";
+import { Link } from "react-router-dom";
 
-var slides = [
-  {
-    id: "1",
-    image: "/images/carousel/first.jpg",
-    caption: `Дивуй Вражай Надихай`
-  },
-  {
-    id: "2",
-    image: "/images/carousel/second.jpg",
-    caption: `You don't need to have a special occasion to send greetings in the language of flowers`
-  }
-]
+import CartIcon from '../../icons/CartIcon';
+import './slider.scss';
 
 export default function Slider() {
   return (
     <Carousel 
+    className='app-slider'
     indicators={false}
     interval={19000}
     animation={false}
     swipe={true}>
-      {slides.map( slide => <SliderItem key={slide.id} slide={slide} /> )}
+
+      <Paper className='app-slide app-slide--first-slide'>
+        <Box className='app-slide__left'>
+          <span className='app-slide_caption'>Дивуй</span>
+          <span className='app-slide_caption'>Вражай</span>
+          <span className='app-slide_caption'>Надихай</span>
+        </Box>
+
+        <Box className='app-slide__right'>
+          <img className='app-slide_image' src={`${homepage}/images/carousel/first.jpg`} alt="slide" />
+        </Box>
+      </Paper>
+
+      <Paper className='app-slide app-slide--second-slide'>
+        <Box className='app-slide__left app-slide__left--muddy-green'>
+          <span className='app-slide_caption'>SEND FLOWERS</span>
+          <span className='app-slide_text'>Тисни на кнопку та обирай букет тут ↓</span>
+          <Link className='app-slide__link' to={homepage}>
+              <CartIcon className='app-slide_icon'/>
+          </Link>
+        </Box>
+
+        <Box className='app-slide__right'>
+          <img className='app-slide_image' src={`${homepage}/images/carousel/second.jpg`} alt="slide" />
+        </Box>
+      </Paper>
+
     </Carousel>
   )
 }

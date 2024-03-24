@@ -1,5 +1,5 @@
 @import '../../styles/variables.scss';
-
+@import '../../styles/normalizer.scss';
 
 .app-cart-icon,
 .app-delivery-icon {
@@ -7,14 +7,32 @@
   stroke-width: 1.5px;
 }
 
-.app-header-actions_button {
-  height: 38px;
+.app-header-actions {
+  margin-top: 23px;
+
+  &_button {
+    height: 60px;
+    padding: 0;
+  }
+
+  &_text {
+    font-style: italic;
+    line-height: 1;
+    margin: 0;
+
+    &-stretched {
+      letter-spacing: 5.7px;
+    }
+  }
+
 }
 
-.app-header-actions_button.css-78trlr-MuiButtonBase-root-MuiIconButton-root:hover {
-  background-color: $active-pink;
+.app-cart-icon {
+  stroke: $primary-dark_grey;
+}
 
+.app-header-actions_button:hover {
   .app-cart-icon {
-    stroke: $primary-white;
+    stroke: $active-peach;
   }
 }
