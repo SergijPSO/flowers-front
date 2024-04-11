@@ -8,7 +8,6 @@ export default function SliderItem({slide}) {
       <Box className='app-slide__left'>
         <span className='app-slide_caption'>{slide.caption}</span>
         <span className='app-slide_text'>{slide?.text}</span>
-        {/* <span className="app-slide__icon"></span> */}
       </Box>
 
       <Box className='app-slide__right'>

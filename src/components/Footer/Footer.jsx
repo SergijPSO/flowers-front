@@ -22,7 +22,7 @@ const Footer = () => {
                Таємна кімната, де єднаються квіткові барви в одну палітру букета. Передамо Ваші вітання мовою квітів та врахуємо усі побажання & деталі. 
             </Typography>
 
-            <Typography className='app-footer__content-item_text'>
+            <Typography className='app-footer__content-item_text app-footer__content-item_text-motto'>
               Єднаємо емоціями!
             </Typography>
             

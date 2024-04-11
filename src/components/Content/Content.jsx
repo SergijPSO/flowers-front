@@ -11,6 +11,7 @@ import AboutUs from "../../pages/AboutUs";
 import Contacts from "../../pages/Contacts";
 import Payment from "../../pages/Payment";
 import Delivery from "../../pages/Delivery";
+import ProductsList from "../ProductsList/ProductsList";
 
 import homepage from "../../homepageName";
 
@@ -32,6 +33,7 @@ export default function Content() {
         <Route path={`${homepage}delivery`} element={<Delivery />} />
         <Route path={`${homepage}contacts`} element={<Contacts />} />
       </Routes>
+      <ProductsList />
     </div>
   );
 }

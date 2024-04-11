@@ -2,9 +2,7 @@ import React from 'react';
 import Carousel from 'react-material-ui-carousel'
 import { Paper, Box } from '@mui/material'
 import homepage from "../../homepageName";
-import { Link } from "react-router-dom";
 
-import CartIcon from '../../icons/CartIcon';
 import './slider.scss';
 
 export default function Slider() {
@@ -14,7 +12,8 @@ export default function Slider() {
     indicators={false}
     interval={19000}
     animation={false}
-    swipe={true}>
+    swipe={true}
+    autoPlay={false}>
 
       <Paper className='app-slide app-slide--first-slide'>
         <Box className='app-slide__left'>
@@ -30,11 +29,15 @@ export default function Slider() {
 
       <Paper className='app-slide app-slide--second-slide'>
         <Box className='app-slide__left app-slide__left--muddy-green'>
-          <span className='app-slide_caption'>SEND FLOWERS</span>
-          <span className='app-slide_text'>Тисни на кнопку та обирай букет тут ↓</span>
-          <Link className='app-slide__link' to={homepage}>
-              <CartIcon className='app-slide_icon'/>
-          </Link>
+          <div className="app-slide__left-content">
+              <span className='app-slide_text'>
+                У КВІТІВ
+                не буває буднів,
+                <br/> вони завжди одягнені
+              </span>
+            <span className='app-slide_caption'>СВЯТКОВО</span>
+          </div>
+          <span className='app-quote'>© Малькольм де Шазаль</span>
         </Box>
 
         <Box className='app-slide__right'>

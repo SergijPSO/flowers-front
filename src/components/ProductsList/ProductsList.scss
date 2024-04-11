@@ -1,0 +1,86 @@
+@import "../../styles/variables.scss";
+
+.app-product-list {
+  padding: 20px 40px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(145px, 1fr));
+  grid-column-gap: 40px;
+  grid-row-gap: 20px;
+
+  &__product-card {
+    // flex-basis: 254px;
+    background-color: $primary-white;
+    border-radius: 14px;
+    font-family: "Cambria", sans-serif;
+
+    &_image {
+      width: 100%;
+      border-radius: 14px 14px 0 0;
+      cursor: pointer;
+    }
+
+    &_name {
+      font-size: 16px;
+      line-height: 20px;
+      color: $primary-graphite;
+    }
+
+    &_price {
+      font-size: 20px;
+      letter-spacing: .03px;
+      line-height: 24px;
+      font-weight: bold;
+      color: $primary-graphite;
+    }
+
+    &_button {
+      display: flex;
+      align-items: center;
+      background: $active-peach;
+      color: $primary-graphite;
+      font-weight: bold;
+      border-radius: 12px;
+      padding: 8px;
+      border: none;
+      cursor: pointer;
+    }
+
+    &_order {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4px 12px 12px;
+    }
+
+    &_name {
+      padding: 10px 12px 8px;
+    }
+  }
+}
+
+
+@media all and (max-width: 1024px) {
+  .app-product-list {
+    grid-template-columns: repeat(3, minmax(124px, 1fr));
+    overflow: hidden;
+  }
+}
+
+@media all and (max-width: 768px) {
+
+
+  .app-product-list {
+    padding: 20px 10px;
+    grid-template-columns: repeat(2, minmax(136px, 1fr));
+    overflow: hidden;
+  }
+}
+
+@media all and (max-width: 468px) {
+  .app-product-list {
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(1, minmax(136px, 1fr));
+    overflow: hidden;
+  }
+}
