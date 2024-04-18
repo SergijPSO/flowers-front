@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Routes, Route } from "react-router-dom";
 import ClassicBouquets from "../../pages/ClassicBouquets";
 import MixedBouquets from "../../pages/MixedBouquets";
@@ -12,12 +12,19 @@ import Contacts from "../../pages/Contacts";
 import Payment from "../../pages/Payment";
 import Delivery from "../../pages/Delivery";
 import ProductsList from "../ProductsList/ProductsList";
+import ProductDetails from "../ProductDetails/ProductDetails";
 
 import homepage from "../../homepageName";
 
 import "./content.scss";
 
 export default function Content() {
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
+  const handleProductClick = (product) => {
+    setSelectedProduct(product);
+  };
+
   return (
     <div className='app-content'>
       <Routes>
@@ -33,7 +40,11 @@ export default function Content() {
         <Route path={`${homepage}delivery`} element={<Delivery />} />
         <Route path={`${homepage}contacts`} element={<Contacts />} />
       </Routes>
-      <ProductsList />
+      {selectedProduct ? (
+        <ProductDetails product={selectedProduct} onClose={() => setSelectedProduct(null)} />
+      ) : (
+        <ProductsList onProductClick={handleProductClick} />
+      )}
     </div>
   );
 }

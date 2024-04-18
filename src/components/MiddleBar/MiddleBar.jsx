@@ -9,7 +9,7 @@ export default function MiddleBar() {
   return (
     <div className='app-middle-bar'>
       <Contacts />
-      <Link to='/flowers-front/'>
+      <Link to='/'>
         <Logo className='app-logo' />
       </Link>
       <HeaderActions />
