@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import ClassicBouquets from "../../pages/ClassicBouquets";
 import MixedBouquets from "../../pages/MixedBouquets";
@@ -25,6 +25,10 @@ export default function Content() {
     setSelectedProduct(product);
   };
 
+  const handleGoBack = () => {
+    setSelectedProduct(null); // Reset selected product
+  };
+
   return (
     <div className='app-content'>
       <Routes>
@@ -41,7 +45,7 @@ export default function Content() {
         <Route path={`${homepage}contacts`} element={<Contacts />} />
       </Routes>
       {selectedProduct ? (
-        <ProductDetails product={selectedProduct} onClose={() => setSelectedProduct(null)} />
+        <ProductDetails product={selectedProduct} onClose={handleGoBack} />
       ) : (
         <ProductsList onProductClick={handleProductClick} />
       )}

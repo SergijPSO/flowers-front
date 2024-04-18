@@ -8,7 +8,7 @@ function Logo() {
       <Avatar
         alt='logo'
         className='app-logo_image'
-        src='./images/logo.png'
+        src='/images/logo.png'
         sx={{ marginRight: "12px", width: "80px", height: "60px" }}
       />
 

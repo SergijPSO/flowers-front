@@ -1,7 +1,6 @@
 import React from 'react';
 import products_data from '../../data/products_data.json';
 import './ProductsList.scss';
-import { Link } from 'react-router-dom';
 
 export default function ProductsList({ onProductClick }) {
   return (

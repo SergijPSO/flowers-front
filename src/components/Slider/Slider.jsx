@@ -23,7 +23,7 @@ export default function Slider() {
         </Box>
 
         <Box className='app-slide__right'>
-          <img className='app-slide_image' src={`${homepage}images/carousel/first.jpg`} alt="slide" />
+          <img className='app-slide_image' src={`.${homepage}images/carousel/first.jpg`} alt="slide" />
         </Box>
       </Paper>
 
@@ -41,7 +41,7 @@ export default function Slider() {
         </Box>
 
         <Box className='app-slide__right'>
-          <img className='app-slide_image' src={`${homepage}images/carousel/second.jpg`} alt="slide" />
+          <img className='app-slide_image' src={`.${homepage}images/carousel/second.jpg`} alt="slide" />
         </Box>
       </Paper>
 
